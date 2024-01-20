@@ -1,10 +1,8 @@
 import {
   Funnel,
-  FunnelSimple,
   List,
   MagnifyingGlass,
   ShoppingCartSimple,
-  User,
   UserCircle,
 } from '@phosphor-icons/react';
 
@@ -12,7 +10,7 @@ const Header = () => {
   return (
     <div>
       <div className="flex w-[100%] justify-between py-4">
-        <div className="logo-container w-1/5 flex justify-center items-center">
+        <div className="flex items-center justify-center w-1/5 logo-container">
           {/* <img
             src="src/assets/Ajuda quem faz.png"
             alt="Logo do website"
@@ -22,8 +20,7 @@ const Header = () => {
         </div>
         <div className="input-group flex justify-stretch w-[100%] border-primary-300 border-2 border-none rounded-3xl">
           <button
-            className="w-1/12 text-sm bg-secondary-500 rounded-s-3xl
-         font-bold flex gap-3 items-center justify-center"
+            className="flex items-center justify-center w-1/12 gap-3 text-sm font-bold bg-secondary-500 rounded-s-3xl"
           >
             <Funnel size={36} color="white" weight="bold" />
           </button>
@@ -36,8 +33,8 @@ const Header = () => {
             <MagnifyingGlass weight="bold" size={32} color="white" />
           </button>
         </div>
-        <div id="header-end" className="flex h-100 justify-evenly items-center w-1/6">
-          <div className="flex flex-col justify-center items-center">
+        <div id="header-end" className="flex items-center w-1/6 h-100 justify-evenly">
+          <div className="flex flex-col items-center justify-center">
             <ShoppingCartSimple className="text-secondary-500" size={58} weight="duotone" />
           </div>
           <UserCircle className="text-secondary-500" size={64} weight="duotone" />
@@ -48,7 +45,7 @@ const Header = () => {
           <button>
             <List size={32} color="white" weight="bold" />
           </button>
-          <div className="flex justify-evenly w-11/12 items-center text-lg font-bold">
+          <div className="flex items-center w-11/12 text-lg font-bold justify-evenly">
             <p>Casa e Decoração</p>
             <p>Moda</p>
             <p>Pets</p>
