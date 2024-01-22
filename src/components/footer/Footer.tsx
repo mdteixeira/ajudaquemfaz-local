@@ -9,7 +9,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <div className="grid grid-cols-3 gap-16 p-8 container mx-auto">
+      <div className="container grid grid-cols-3 gap-16 p-8 mx-auto">
         <ul className="">
           <h2 className="text-2xl font-bold">Título da Lista</h2>
           <li>Item</li>
@@ -35,11 +35,11 @@ const Footer = () => {
           <li>Item</li>
         </ul>
       </div>
-      <section className="flex justify-between  items-center bg-primary-400">
-        <div className="h-20 w-1/12 flex justify-center">
-          <img src="src/assets/Ajuda quem faz.png" alt="" className="h-20" />
+      <section className="flex items-center justify-between bg-primary-400">
+        <div className="flex justify-center w-1/12 h-20">
+          <img src="./src/assets/Ajuda quem faz.png" alt="" className="h-20" />
         </div>
-        <section className="flex gap-8 text-white w-1/4 justify-evenly">
+        <section className="flex w-1/4 gap-8 text-white justify-evenly">
           <FacebookLogo color="white" size={42}></FacebookLogo>
           <LinkedinLogo color="white" size={42}></LinkedinLogo>
           <InstagramLogo color="white" size={42}></InstagramLogo>
@@ -47,11 +47,11 @@ const Footer = () => {
         </section>
       </section>
       <section className="flex justify-between">
-        <div className="font-bold flex gap-2 items-center px-4">
+        <div className="flex items-center gap-2 px-4 font-bold">
           <Copyright></Copyright>
           <p>Copyright 2024</p>
         </div>
-        <div className="font-bold flex gap-3 px-4">
+        <div className="flex gap-3 px-4 font-bold">
           <p>Termos de Uso</p>
           <p>Política de Privacidade</p>
         </div>

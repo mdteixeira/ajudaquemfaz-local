@@ -1,12 +1,12 @@
 const CardOng = () => {
   return (
     <>
-      <div className="p-5 bg-secondary-200 text-black rounded-3xl flex items-center gap-4">
+      <div className="flex items-center gap-4 p-5 text-black bg-secondary-200 rounded-3xl">
         <img
-          src="src/assets/Ajuda quem faz.png"
+          src="./src/assets/Ajuda quem faz.png"
           width={80}
           height={80}
-          className="bg-primary-400 rounded-full h-20 w-20"
+          className="w-20 h-20 rounded-full bg-primary-400"
         ></img>
         <div className="h-[100%]">
           <h2 className="font-bold">Nome da Ong</h2>
